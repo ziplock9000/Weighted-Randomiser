@@ -1,5 +1,7 @@
 # Weighted Randomiser
- A class to produce weighted random choices of any source type
+ A C# class to produce weighted random choices of any source type. I use this in some of my Unity projects.
+ 
+ Performance, scalability and non-allocating updates welcomed.
  
  Windows console app to demonstrate the class
  
