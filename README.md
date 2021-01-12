@@ -1,6 +1,5 @@
 # Weighted Randomiser
-
-A class to produce weighted random choices of any source type
+ A class to produce weighted random choices of any source type
  
 Windows console app to demonstrate the class
  
