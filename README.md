@@ -8,4 +8,6 @@ with games to reduce garbage collections
  
 NOTE: Code originally from Philipp @ https://gamedev.stackexchange.com/questions/162976/how-do-i-create-a-weighted-collection-and-then-pick-a-random-element-from-it
  
+
+ Updated and link to issue #1
  
