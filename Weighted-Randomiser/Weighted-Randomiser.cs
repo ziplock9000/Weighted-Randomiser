@@ -27,6 +27,7 @@ internal class WeightedRandomiser<T>
     {
         double r = rand.NextDouble() * accumulatedWeight;
 
+        //TODO: Having to loop through each item until one is found at a certain threshold before exiting seems to be inefficient. Why can't we just index directly to a value?
         foreach (Entry entry in entries)
         {
             if (entry.accumulatedWeight >= r)
