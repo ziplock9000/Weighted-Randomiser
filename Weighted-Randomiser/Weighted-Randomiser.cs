@@ -27,6 +27,12 @@ internal class WeightedRandomiser<T>
     {
         double r = rand.NextDouble() * accumulatedWeight;
 
+        //DO NOT Use the linq version, it's half the speed and uses more memory
+        //foreach (Entry entry in entries.Where(entry => entry.accumulatedWeight >= r))
+        //{
+        //    return entry.item;
+        //}
+
         //TODO: Having to loop through each item until one is found at a certain threshold before exiting seems to be inefficient. Why can't we just index directly to a value?
         //Apparently not, every example on the internet uses this loop.
         foreach (Entry entry in entries)
