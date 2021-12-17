@@ -6,6 +6,7 @@ using System.Collections.Generic;
 
 internal class WeightedRandomiser<T>
 {
+    public object Count => entries.Count;
 
     private struct Entry
     {
@@ -39,5 +40,10 @@ internal class WeightedRandomiser<T>
         //DO NOT Use the linq or foreach version, they are both slower and the linq version uses more memory by quite a margin.
 
         return default;
+    }
+
+    public void Clear()
+    {
+        entries.Clear();
     }
 }
